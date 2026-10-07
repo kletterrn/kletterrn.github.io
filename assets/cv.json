@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "name": "David Khaliqi",
+  "headline": "Medienassistent · Webdesign · Entwicklung",
+  "location": "Haßloch, Rheinland-Pfalz",
+  "email": "davidkhaliqi05@gmail.com",
+  "summary": "Ich verbinde Erfahrung in Gestaltung, Webdesign und Kundenbetreuung mit meinem Interesse an Softwareentwicklung und IT-Sicherheit. Mein nächstes Ziel ist eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung im Jahr 2027.",
+  "experience": [
+    {
+      "title": "Communication Service Expert Agent",
+      "organization": "TAS Mülheim GmbH · Mülheim",
+      "period": "Sep. 2025 – Juni 2026",
+      "details": "Bearbeitung und Verwaltung von Kundenanliegen im Backoffice\nKoordination und Abstimmung mit Energieversorgern\nPrüfung, Pflege und Aktualisierung von Kunden- und Energiedaten\nKlärung von Abrechnungs-, Liefer- und Zählerangelegenheiten\nNachverfolgung offener Vorgänge und fristgerechte Bearbeitung"
+    },
+    {
+      "title": "Social Media Manager",
+      "organization": "InGlory · Landau",
+      "period": "Dez. 2023 – Aug. 2025",
+      "details": "Entwicklung zielgruppengerechter Social-Media-Strategien und Kampagnen\nBetreuung der Social-Media-Kanäle und Analyse von Reichweite und Interaktionen\nGestaltung von Corporate Designs, Logos und Websites\nKonzeption digitaler Medien, Printprodukte und Werbematerialien\nEntwicklung kreativer Konzepte für Markenbekanntheit und Kundenbindung"
+    },
+    {
+      "title": "Servicearbeiter",
+      "organization": "Cineplex · Neustadt an der Weinstraße",
+      "period": "März 2021 – Jan. 2022",
+      "details": "Kassentätigkeiten und Ticketverkauf\nUnterstützung des Gastronomiebetriebs\nFreundliche Betreuung der Gäste"
+    }
+  ],
+  "education": [
+    {
+      "title": "Medienassistent",
+      "organization": "BBS Neustadt an der Weinstraße",
+      "period": "Aug. 2021 – Juli 2023",
+      "details": "Berufsbildende Schule · Schwerpunkt Medien und Gestaltung"
+    },
+    {
+      "title": "Jahrespraktikum Webdesign und Marketing",
+      "organization": "InGlory",
+      "period": "Feb. 2022 – Feb. 2023",
+      "details": "Praktische Erfahrung im Webdesign und Marketing"
+    },
+    {
+      "title": "Schulabschluss",
+      "organization": "Peter-Gärtner-Realschule · Böhl-Iggelheim",
+      "period": "Aug. 2017 – Juli 2021",
+      "details": ""
+    }
+  ],
+  "learning": [
+    {
+      "title": "Google Cybersecurity Professional Certificate",
+      "organization": "Google",
+      "period": "Aktuell · In Bearbeitung",
+      "details": "Laufende Weiterbildung im Bereich Cybersecurity; noch nicht abgeschlossen."
+    },
+    {
+      "title": "ADA Bootcamp September 2026",
+      "organization": "Azubi Digital Akademie",
+      "period": "31. Aug. – 25. Sep. 2026 · Abgeschlossen · 120 Stunden",
+      "details": "HTML und CSS zur Erstellung einer eigenen Portfolio-Webseite\nPython-Grundlagen und objektorientierte Programmierung\nPlanung und Umsetzung eines eigenen App-/Webapp-Projekts mit Prototyping und agilen Methoden\nAbschlussprojekt „Project Ignis“: automatisierte Auswertung von Brandflächen anhand von NASA-Satellitenbildern\nErfolgreiche Teilnahme, bestätigt durch das Zertifikat vom 29. September 2026"
+    },
+    {
+      "title": "OpenAI Build Week · Hackathon",
+      "organization": "OpenAI Build Week",
+      "period": "13. Juni 2026",
+      "details": "Entwicklung einer KI-gestützten Plattform für Lehrkräfte zur Analyse und Korrektur von Fehlern"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Design & Bildbearbeitung",
+      "details": "Adobe Illustrator, Photoshop, InDesign, Lightroom, Acrobat"
+    },
+    {
+      "title": "Webentwicklung & Programmierung",
+      "details": "HTML, CSS, Python"
+    },
+    {
+      "title": "Office",
+      "details": "Microsoft Word, Excel, PowerPoint"
+    },
+    {
+      "title": "Sprachen",
+      "details": "Englisch · B2"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "name": "David Khaliqi",
+  "headline": "Media Assistant · Web Design · Development",
+  "location": "Haßloch, Rhineland-Palatinate, Germany",
+  "email": "davidkhaliqi05@gmail.com",
+  "summary": "I combine experience in design, web development and customer service with an interest in software development and cybersecurity. My next goal is to start a vocational apprenticeship in application development in 2027.",
+  "experience": [
+    {
+      "title": "Communication Service Expert Agent",
+      "organization": "TAS Mülheim GmbH · Mülheim",
+      "period": "Sep 2025 – Jun 2026",
+      "details": "Handled and managed customer enquiries in the back office\nCoordinated with energy suppliers\nChecked, maintained and updated customer and energy data\nResolved billing, supply and meter-related issues\nTracked open cases and ensured timely processing"
+    },
+    {
+      "title": "Social Media Manager",
+      "organization": "InGlory · Landau",
+      "period": "Dec 2023 – Aug 2025",
+      "details": "Developed targeted social media strategies and campaigns\nManaged social media channels and analysed reach and engagement\nDesigned visual identities, logos and websites\nCreated digital media, print products and marketing materials\nDeveloped creative concepts to strengthen brand awareness and customer engagement"
+    },
+    {
+      "title": "Service Staff",
+      "organization": "Cineplex · Neustadt an der Weinstraße",
+      "period": "Mar 2021 – Jan 2022",
+      "details": "Handled ticket sales and cash register duties\nSupported food and beverage operations\nProvided friendly customer service"
+    }
+  ],
+  "education": [
+    {
+      "title": "Media Assistant",
+      "organization": "BBS Neustadt an der Weinstraße",
+      "period": "Aug 2021 – Jul 2023",
+      "details": "Vocational education with a focus on media and design"
+    },
+    {
+      "title": "Year-long Internship in Web Design and Marketing",
+      "organization": "InGlory",
+      "period": "Feb 2022 – Feb 2023",
+      "details": "Practical experience in web design and marketing"
+    },
+    {
+      "title": "School-leaving Qualification",
+      "organization": "Peter-Gärtner-Realschule · Böhl-Iggelheim",
+      "period": "Aug 2017 – Jul 2021",
+      "details": ""
+    }
+  ],
+  "learning": [
+    {
+      "title": "Google Cybersecurity Professional Certificate",
+      "organization": "Google",
+      "period": "Currently in progress",
+      "details": "Ongoing professional development in cybersecurity; certificate not yet completed."
+    },
+    {
+      "title": "ADA Bootcamp September 2026",
+      "organization": "Azubi Digital Akademie",
+      "period": "31 Aug – 25 Sep 2026 · Completed · 120 hours",
+      "details": "HTML and CSS for building a personal portfolio website\nPython fundamentals and object-oriented programming\nPlanning and developing an app or web app using prototyping and agile methods\nFinal project “Project Ignis”: automated analysis of burned areas using NASA satellite imagery\nSuccessful participation confirmed by the certificate issued on 29 September 2026"
+    },
+    {
+      "title": "OpenAI Build Week · Hackathon",
+      "organization": "OpenAI Build Week",
+      "period": "13 June 2026",
+      "details": "Developed an AI-assisted platform to help teachers analyse and correct errors"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Design & Image Editing",
+      "details": "Adobe Illustrator, Photoshop, InDesign, Lightroom, Acrobat"
+    },
+    {
+      "title": "Web Development & Programming",
+      "details": "HTML, CSS, Python"
+    },
+    {
+      "title": "Office",
+      "details": "Microsoft Word, Excel, PowerPoint"
+    },
+    {
+      "title": "Languages",
+      "details": "English · B2"
+    }
+  ]
+}
