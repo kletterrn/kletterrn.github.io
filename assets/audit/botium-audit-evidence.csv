@@ -1,0 +1,27 @@
+Section,Item,Checklist answer,Assessment / evidence
+Controls,Least privilege,No,"Missing: Employees have broad access to internal data, including potentially payment and personal data."
+Controls,Disaster recovery plans,No,Missing: The report explicitly states that no disaster recovery plan exists.
+Controls,Password policies,Yes,"Needs improvement: A policy exists, but its requirements are weak. Presence does not mean adequacy."
+Controls,Separation of duties,No,Missing: The report states that separation of duties has not been implemented.
+Controls,Firewall,Yes,Reported in place: Traffic is filtered using a defined set of security rules.
+Controls,Intrusion detection system,No,Missing: No IDS has been installed.
+Controls,Backups,No,Missing: Critical data is not backed up.
+Controls,Antivirus software,Yes,Reported in place: Antivirus is installed and regularly monitored.
+Controls,Legacy-system monitoring and maintenance,Yes,"Needs improvement: Monitoring occurs, but there is no regular schedule and intervention methods are unclear."
+Controls,Encryption,No,Missing: The report states that payment data is not encrypted in its internal handling and storage.
+Controls,Password management system,No,Missing: No centralized system enforces the password policy.
+Controls,Locks,Yes,"Reported in place: The office, storefront and warehouse have sufficient locks."
+Controls,CCTV surveillance,Yes,Reported in place: The physical location has up-to-date surveillance.
+Controls,Fire detection and prevention,Yes,Reported in place: Fire detection and prevention systems are functioning.
+PCI DSS,Restrict cardholder-data access,No,All employees can access internal data; least privilege is absent.
+PCI DSS,Secure internal payment-data environment,No,Broad access and absent encryption leave the stated practice unmet.
+PCI DSS,Encrypt payment-data touchpoints,No,Encryption is explicitly absent.
+PCI DSS,Secure password management,No,The weak policy and lack of centralized enforcement leave a gap.
+GDPR,Keep EU customer data private and secure,No,Broad access and missing encryption undermine confidentiality.
+GDPR,Customer notification plan within 72 hours,Yes,The scenario states this plan exists. This answers the course item only; see the legal clarification below.
+GDPR,Classify and inventory data,No,Asset management is inadequate; classification and inventory work are still needed.
+GDPR,Enforce privacy policies and procedures,Yes,The report states these are developed and enforced. Other privacy gaps remain.
+SOC checklist,Establish user access policies,No,Least privilege and separation of duties are not implemented.
+SOC checklist,Maintain sensitive-data confidentiality,No,Employees have broad internal-data access and encryption is absent.
+SOC checklist,Maintain data integrity,Yes,The report states that controls for integrity have been integrated; no independent testing was performed.
+SOC checklist,Make data available to authorized users,Yes,Availability is reported. This does not establish appropriate access restrictions or tested recovery.
