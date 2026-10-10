@@ -73,7 +73,7 @@
     target.addEventListener('pointerleave',reset);target.addEventListener('blur',reset);
     reduced.addEventListener('change',reset);fine.addEventListener('change',reset);
   });
-  const panels=[...document.querySelectorAll('.project-panel')];
+  const panels=[...document.querySelectorAll('.project-panel, .audit-card')];
   let scrollFrame=0;
   function updateScroll(){
     scrollFrame=0;

@@ -34,3 +34,9 @@
 @media(max-width:950px){.audit-priorities{grid-template-columns:1fr}.audit-priority p{max-width:75ch}}
 @media(max-width:760px){.audit-card{grid-template-columns:1fr;padding:24px 20px;gap:28px}.audit-card h3{font-size:clamp(44px,12vw,72px)}.audit-board{padding:22px}.audit-section h2{font-size:clamp(30px,8vw,42px)}.audit-page .case-hero h1{font-size:clamp(44px,12vw,76px)}.audit-actions{gap:10px}.audit-actions a{width:100%;justify-content:center;text-align:center}.audit-note{padding:22px}.audit-table th,.audit-table td{padding:14px}.audit-scroll-hint{display:block!important;font:11px/1.6 var(--mono);color:var(--muted);margin:10px 0}.audit-table-wrap{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.audit-actions a{transition:none}}
+
+/* Reuse the shared project cursor on pointer-capable desktop devices. */
+@media (hover:hover) and (pointer:fine) and (min-width:761px) and (prefers-reduced-motion:no-preference){
+ .audit-card.pointer-active,.audit-card.pointer-active *{cursor:none!important}
+ .audit-card.pointer-active .project-hover{opacity:1;transform:translate(-50%,-50%) scale(1)}
+}
