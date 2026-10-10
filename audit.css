@@ -38,64 +38,37 @@
  
 }
 
-/* Botium inherits the same project-card composition as Ignis and Orion. */
-.project-panel.project-botium{background:radial-gradient(ellipse at 72% 40%,#354a68 0%,#1e2b40 44%,#101823 85%);color:#edf2fb;aspect-ratio:1.9;min-height:470px}
-.project-botium .project-title{left:4%;top:25%;width:auto}
-.project-botium .project-title>p{font-size:15px;line-height:1.45;margin-bottom:27px;color:inherit}
-.project-botium .project-title h3{font-size:clamp(48px,6.3vw,95px);font-weight:650;letter-spacing:-.065em;line-height:.87}
-.project-botium .project-panel-head>.label,.project-botium .project-state{color:inherit}
-.botium-display{position:absolute;left:47%;top:21%;width:46%;padding:clamp(20px,2.2vw,36px);background:linear-gradient(145deg,#202e45,#141c29);border:1px solid #8b9fc533;border-radius:12px;box-shadow:0 24px 70px #0003;transform:rotate(-3deg);transition:transform .5s;pointer-events:none}
-.project-botium:hover .botium-display{transform:rotate(-1deg) translateY(-8px)}
-.botium-report-head{display:flex;justify-content:space-between;gap:16px;color:var(--accent-soft)}
-.botium-score{display:flex;align-items:center;gap:24px;padding:24px 0}
-.botium-score strong{font-size:clamp(48px,5vw,80px);font-weight:500;letter-spacing:-.055em;line-height:1}
-.botium-score strong span{font-size:.34em;margin-left:8px;letter-spacing:0;color:var(--accent-soft)}
-.botium-score p{font-size:14px;line-height:1.7}.botium-score small{color:var(--text-secondary);font-size:11px}
-.botium-findings>div{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--line-accent);padding:13px 0;font-size:13px}
-.botium-findings b{font:14px var(--mono);color:var(--accent-soft)}
-.project-botium .project-hover{background:#f3f4eceb;color:#111}
 .audit-resources{border:1px solid var(--line);background:var(--surface);border-radius:var(--radius-panel);padding:clamp(24px,4vw,48px)}
 .audit-resources h2{margin-top:14px}.audit-report-text{max-width:80ch;margin:0 auto;padding:50px 0 80px;line-height:1.85}.audit-report-text h1{font-size:clamp(32px,5vw,64px);line-height:1.1;margin:24px 0}.audit-report-text h2{font-size:30px;margin:44px 0 18px}.audit-report-text h3{font-size:22px;margin:28px 0 14px}.audit-report-text p,.audit-report-text li{margin:14px 0;color:var(--text-secondary)}.audit-report-text ul{padding-left:24px}
+
+.project-panel.project-botium{background:#17191c;color:var(--text);aspect-ratio:1.9;min-height:470px;border:1px solid var(--line);isolation:isolate}
+.project-botium .project-title{left:4%;top:25%;width:40%}
+.project-botium .project-title>p{font-size:15px;line-height:1.45;margin-bottom:27px;color:var(--text-secondary)}
+.project-botium .project-title h3{font-size:clamp(48px,6.3vw,95px);font-weight:650;letter-spacing:-.065em;line-height:.87}
+.project-botium .project-panel-head>.label,.project-botium .project-state{color:inherit}
+.project-botium .project-hover{background:#f3f4eceb;color:#111}
+.botium-foundation{position:absolute;left:47%;top:9%;width:48%;height:81%;margin:0;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.botium-foundation svg{display:block;width:100%;min-height:0;flex:1;overflow:visible}
+.foundation-note{font:10px var(--mono);letter-spacing:.08em;fill:var(--text-secondary)}
+.foundation-arch{transition:transform .65s cubic-bezier(.22,1,.36,1)}
+.project-botium:hover .foundation-arch{transform:translateY(-10px)}
+.botium-foundation figcaption{display:flex;align-items:center;gap:18px;width:64%;padding:14px 0 0;border-top:1px solid #ffffff20}
+.botium-foundation figcaption>span{font:500 30px/1 var(--font);letter-spacing:-.06em;white-space:nowrap}
+.foundation-total{color:var(--muted);font-size:19px}
+.botium-foundation figcaption p{font-size:12px;line-height:1.5;color:var(--text);margin:0}
+.botium-foundation figcaption p>span{font-size:10px;color:var(--muted)}
+.audit-exhibit{position:relative;min-height:590px;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-panel);background:#17191c}
+.exhibit-copy{position:relative;z-index:2;padding:clamp(28px,4vw,64px);width:49%}
+.exhibit-copy>.label{color:var(--muted)}
+.exhibit-copy h2{font-size:clamp(38px,4.5vw,70px);line-height:1.04;letter-spacing:-.05em;margin:30px 0 22px}
+.exhibit-copy em{font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--accent-soft)}
+.exhibit-copy>p:not(.label){color:var(--text-secondary);font-size:15px;line-height:1.8}
+.exhibit-copy>a{display:inline-flex;gap:20px;align-items:center;min-height:48px;margin-top:18px;color:var(--text);font-size:14px;text-decoration:underline;text-underline-offset:5px}
+.audit-exhibit .botium-foundation{left:49%;top:5%;width:48%;height:77%}
+.exhibit-track{position:absolute;inset:auto 0 0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);z-index:3}
+.exhibit-track>span{padding:20px;font:11px/1.6 var(--mono);color:var(--text-secondary)}
+.exhibit-track b{color:var(--text);margin-right:10px}
 @media(min-width:1600px){.project-panel.project-botium{min-height:680px}}
-@media(min-width:761px) and (max-width:1150px){.project-panel.project-botium{min-height:430px}.project-botium .project-title{top:28%}.project-botium .project-title>p{font-size:13px;margin-bottom:23px}.project-botium .project-title h3{font-size:6.4vw}.botium-display{top:23%;padding:18px}.botium-score{gap:16px;padding:18px 0}.botium-score p{font-size:12px}.botium-report-head .label{font-size:8px}.botium-findings>div{font-size:11px;padding:10px 0}}
-@media(max-width:760px){.project-panel.project-botium{aspect-ratio:auto;min-height:0}.project-botium .project-title{position:static;width:auto}.project-botium .project-title>p{font-size:15px;line-height:1.5;margin-bottom:14px}.project-botium .project-title h3{font-size:clamp(44px,12vw,72px);line-height:.98}.botium-display,.project-botium:hover .botium-display{position:relative;inset:auto;width:100%;padding:20px;transform:none;transition:none;box-sizing:border-box}.botium-report-head{flex-wrap:wrap;gap:6px}.botium-score{gap:20px}.botium-score strong{font-size:54px}.botium-score p{font-size:12px}.audit-report-text{padding-top:28px}.audit-resources{padding:22px}}
-@media(prefers-reduced-motion:reduce){.botium-display,.project-botium:hover .botium-display{transform:none;transition:none}}
-
-/* Botium's own visual language: an evidence dossier on a technical grid. */
-.project-panel.project-botium{background-color:var(--bg);background-image:linear-gradient(90deg,transparent 44%,#3153ff12),linear-gradient(#b4c7ff08 1px,transparent 1px),linear-gradient(90deg,#b4c7ff08 1px,transparent 1px);background-size:auto,48px 48px,48px 48px;border:1px solid var(--line-accent)}
-.project-botium:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 20%,transparent 80%);pointer-events:none}
-.botium-dossier{position:absolute;left:51%;top:17%;width:37%;height:65%;isolation:isolate;pointer-events:none}
-.dossier-back{position:absolute;inset:0;background:var(--blue);border-radius:5px;transform:translate(24px,-12px) rotate(7deg);transition:transform .6s}
-.dossier-back>span{position:absolute;right:14px;top:12px;font:9px var(--mono);color:white}
-.dossier-sheet{position:absolute;inset:0;background:var(--text);color:var(--bg);border-radius:4px;padding:clamp(20px,2.5vw,38px);box-shadow:0 25px 60px #0006;transform:rotate(-5deg);transition:transform .6s;display:flex;flex-direction:column}
-.dossier-top,.dossier-bottom{display:flex;justify-content:space-between;gap:12px;font:clamp(7px,.65vw,10px)/1.5 var(--mono);letter-spacing:.02em}
-.dossier-heading{font-size:clamp(32px,4.5vw,72px);font-weight:650;letter-spacing:-.055em;line-height:.95;margin:18px 0 22px}.dossier-heading>span{color:var(--blue)}
-.dossier-rule{height:3px;background:var(--blue);margin-bottom:10px}
-.dossier-line{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #10101026;padding:10px 0;font-size:clamp(10px,.95vw,14px)}
-.dossier-line b{color:var(--blue);font:9px var(--mono);border:1px solid currentColor;padding:3px 5px}.dossier-line .dossier-present{color:#353535;border-color:#10101040}
-.dossier-bottom{margin-top:auto;padding-top:18px;color:#353535}
-.dossier-tab{position:absolute;left:-24px;bottom:24px;padding:12px 18px;background:var(--blue);color:white;font:10px var(--mono);transform:rotate(-5deg);box-shadow:0 6px 20px #0003}
-.project-botium:hover .dossier-sheet{transform:rotate(-2deg) translateY(-6px)}.project-botium:hover .dossier-back{transform:translate(30px,-16px) rotate(9deg)}
-.audit-exhibit{position:relative;min-height:560px;overflow:hidden;border:1px solid var(--line-accent);border-radius:var(--radius-panel);background-color:var(--bg);background-image:linear-gradient(#b4c7ff09 1px,transparent 1px),linear-gradient(90deg,#b4c7ff09 1px,transparent 1px);background-size:48px 48px}
-.exhibit-copy{position:relative;z-index:2;padding:clamp(28px,4vw,64px);width:49%}.exhibit-copy>.label{color:var(--accent-soft)}.exhibit-copy h2{font-size:clamp(38px,4.5vw,70px);line-height:1.04;letter-spacing:-.05em;margin:30px 0 22px}.exhibit-copy em{font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--accent-soft)}.exhibit-copy>p:not(.label){color:var(--text-secondary);font-size:15px;line-height:1.8}.exhibit-copy>a{display:inline-flex;gap:20px;align-items:center;min-height:48px;margin-top:18px;color:var(--accent-soft);font-size:14px}
-.audit-exhibit .botium-dossier{left:57%;top:14%;width:31%;height:65%}
-.exhibit-track{position:absolute;inset:auto 0 0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-accent);background:var(--surface);z-index:3}.exhibit-track>span{padding:20px;font:11px/1.6 var(--mono);color:var(--text-secondary)}.exhibit-track b{color:var(--accent-soft);margin-right:10px}
-@media(min-width:1600px){.botium-dossier{height:65%}.dossier-heading{margin-top:28px;margin-bottom:30px}.dossier-line{padding:14px 0}}
-@media(min-width:761px) and (max-width:1150px){.botium-dossier{top:20%;height:62%;width:38%;left:52%}.dossier-sheet{padding:18px}.dossier-heading{margin:14px 0}.dossier-line{padding:7px 0}.dossier-bottom{padding-top:12px}.dossier-tab{font-size:8px;padding:8px 12px;bottom:12px;left:-16px}.audit-exhibit .botium-dossier{left:56%;width:36%;height:62%}}
-@media(max-width:760px){.project-botium:before{background:linear-gradient(var(--bg),transparent)}.botium-dossier{position:relative;inset:auto;width:calc(100% - 40px);height:360px;margin:12px 20px 18px}.dossier-sheet{padding:24px;transform:rotate(-3deg)}.dossier-back{transform:translate(14px,-6px) rotate(4deg)}.dossier-heading{font-size:52px;margin:20px 0}.dossier-top,.dossier-bottom{font-size:8px}.dossier-line{font-size:12px;padding:11px 0}.dossier-tab{left:-12px;bottom:15px;font-size:8px}.audit-exhibit{min-height:0}.exhibit-copy{width:auto;padding:28px 24px}.exhibit-copy h2{font-size:42px;margin:22px 0}.audit-exhibit .botium-dossier{position:relative;inset:auto;width:calc(100% - 80px);height:360px;margin:12px 40px 34px}.exhibit-track{position:relative;grid-template-columns:1fr}.exhibit-track>span{padding:12px 24px}.project-botium:hover .dossier-sheet{transform:rotate(-3deg)}.project-botium:hover .dossier-back{transform:translate(14px,-6px) rotate(4deg)}}
-@media(prefers-reduced-motion:reduce){.dossier-sheet,.dossier-back{transition:none}.project-botium:hover .dossier-sheet{transform:rotate(-5deg)}.project-botium:hover .dossier-back{transform:translate(24px,-12px) rotate(7deg)}}
-
-/* Size the report composition to fit each card without clipping its evidence. */
-.project-botium .botium-dossier{top:15%;height:70%}
-.dossier-sheet{padding:clamp(18px,1.8vw,28px)}
-.dossier-heading{font-size:clamp(30px,3vw,48px);margin:14px 0}
-.dossier-top,.dossier-bottom{font-size:8px;line-height:1.4}
-.dossier-line{font-size:11px;padding:7px 0}
-.dossier-line b{font-size:8px;padding:2px 4px}
-.dossier-bottom{padding-top:12px}
-.dossier-rule{margin-bottom:6px}
-@media(max-width:760px){.project-botium .botium-dossier{top:auto;height:360px}.dossier-sheet{padding:22px}.dossier-heading{font-size:42px;margin:16px 0}.dossier-line{padding:9px 0}.dossier-bottom{padding-top:14px}.audit-exhibit .botium-dossier{height:360px}}
-@media(max-width:760px) and (prefers-reduced-motion:reduce){.project-botium:hover .dossier-sheet{transform:rotate(-3deg)}.project-botium:hover .dossier-back{transform:translate(14px,-6px) rotate(4deg)}}
-
-/* An evidence-based control map, unique to Botium. */
-.botium-control-map{position:absolute;left:46%;top:8%;width:51%;height:84%;pointer-events:none;isolation:isolate}.botium-control-map svg{display:block;width:100%;height:100%;overflow:visible}.map-mono{font:10px var(--mono);letter-spacing:.08em;fill:var(--accent-soft)}.map-label{font:13px var(--font);fill:var(--text)}.map-number{font:110px var(--font);font-weight:600;letter-spacing:-.085em;fill:var(--text)}.map-dot{fill:var(--blue)}.control-orbit{transform-origin:320px 275px;animation:control-orbit 42s linear infinite}.control-core{animation:control-float 7s ease-in-out infinite}.control-callout{transition:transform .6s}.project-botium:hover .callout-access{transform:translate(0,-5px)}.project-botium:hover .callout-recovery{transform:translate(0,5px)}.project-panel.project-botium{background-image:radial-gradient(ellipse at 77% 48%,#3153ff18,transparent 58%),linear-gradient(#b4c7ff06 1px,transparent 1px),linear-gradient(90deg,#b4c7ff06 1px,transparent 1px);background-size:auto,64px 64px,64px 64px}.audit-exhibit .botium-control-map{left:46%;top:1%;width:54%;height:87%}@keyframes control-orbit{to{transform:rotate(360deg)}}@keyframes control-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@media(max-width:760px){.botium-control-map,.audit-exhibit .botium-control-map{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:640/560;margin:0 0 18px}.control-orbit,.control-core{animation:none}.project-botium:hover .control-callout{transform:none}}@media(prefers-reduced-motion:reduce){.control-orbit,.control-core{animation:none}.control-callout{transition:none}.project-botium:hover .control-callout{transform:none}}
+@media(min-width:761px) and (max-width:1150px){.project-panel.project-botium{min-height:430px}.project-botium .project-title{top:28%}.project-botium .project-title>p{font-size:13px;margin-bottom:23px}.project-botium .project-title h3{font-size:6.4vw}.botium-foundation figcaption{width:80%;gap:12px}.botium-foundation figcaption p{font-size:10px}.botium-foundation figcaption p>span{font-size:9px}}
+@media(max-width:760px){.project-panel.project-botium{aspect-ratio:auto;min-height:0}.project-botium .project-title{position:static;width:auto}.project-botium .project-title>p{font-size:15px;line-height:1.5;margin-bottom:14px}.project-botium .project-title h3{font-size:clamp(44px,12vw,72px);line-height:.98}.botium-foundation,.audit-exhibit .botium-foundation{position:relative;inset:auto;width:100%;height:auto;margin:12px 0 28px}.botium-foundation svg{flex:none;aspect-ratio:620/530}.botium-foundation figcaption{width:76%;gap:18px;padding-top:12px}.botium-foundation figcaption>span{font-size:28px}.botium-foundation figcaption p{font-size:11px}.botium-foundation figcaption p>span{font-size:9px}.audit-exhibit{min-height:0}.exhibit-copy{width:auto;padding:28px 24px 0}.exhibit-copy h2{font-size:42px;margin:22px 0}.audit-exhibit .botium-foundation{width:calc(100% - 32px);margin:0 16px 28px}.exhibit-track{position:relative;grid-template-columns:1fr}.exhibit-track>span{padding:12px 24px}.project-botium:hover .foundation-arch{transform:none}.audit-report-text{padding-top:28px}.audit-resources{padding:22px}}
+@media(prefers-reduced-motion:reduce){.foundation-arch{transition:none}.project-botium:hover .foundation-arch{transform:none}}
